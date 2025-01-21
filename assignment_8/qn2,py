@@ -1,0 +1,16 @@
+'''Draw Sin and Cos curve'''
+import numpy as np 
+import matplotlib.pyplot as plt 
+x=np.linspace(0,2*np.pi,800)
+y=np.sin(x)
+z=np.cos(x)
+plt.subplot(2,2,1)
+plt.title("Sin Curve: ")
+plt.plot(x,y)
+
+plt.subplot(2,2,2)
+plt.title("Cos Curve: ")
+plt.plot(x,z)
+
+plt.show()
+
